@@ -1,5 +1,7 @@
 # Overview
-This project demonstrates serverless [issue 7223](https://github.com/serverless/serverless/issues/7223). Serverless removes all whitespace characters from the names of [custom variable types](https://serverless.com/framework/docs/providers/aws/guide/plugins#custom-variable-types) before they are sent to a plugin to be resolved.
+This project demonstrates serverless [issue 7223](https://github.com/serverless/serverless/issues/7223). 
+
+Serverless removes all whitespace characters from the names of [custom variable types](https://serverless.com/framework/docs/providers/aws/guide/plugins#custom-variable-types) before they are sent to a plugin to be resolved.
 
 To show this we use the [EchoTestVarPlugin](https://serverless.com/framework/docs/providers/aws/guide/plugins#custom-variable-types) from the serverless documentation. It resolves a variable like `${echo:foo}` to the string `foo`.
 
