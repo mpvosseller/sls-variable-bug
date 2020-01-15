@@ -1,0 +1,14 @@
+{
+  "name": "sls-variable-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vars": "sls print"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.61.1"
+  }
+}

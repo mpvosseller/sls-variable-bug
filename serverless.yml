@@ -1,0 +1,12 @@
+service: sls-variable-bug
+
+provider:
+  name: aws
+
+plugins:
+  - ./echo-test-var-plugin
+
+custom:
+  var1: ${echo:foo bar}
+  var2: ${echo:"foo bar"}
+  var3: ${echo:'foo bar'}
