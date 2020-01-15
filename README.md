@@ -16,3 +16,24 @@ Also if double quotes or single quotes are used (e.g. `${echo:"foo bar"}` or `${
 - Observe the values of `var2` and `var3` are incorrect
 
 
+# Output:
+```
+> yarn sls print                                                     
+yarn run v1.19.1
+$ /Users/mpv/dev/hack/sls-variable-bug/node_modules/.bin/sls print
+EchoTestVarPlugin resolving echo:foobar
+service: sls-variable-bug
+provider:
+  name: aws
+plugins:
+  - ./echo-test-var-plugin
+custom:
+  var1: foobar
+  var2: 'echo:"foo bar'
+  var3: 'echo:''foo bar'
+
+Done in 2.83s.
+```
+ 
+
+
